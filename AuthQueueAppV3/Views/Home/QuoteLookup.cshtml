@@ -1,0 +1,22 @@
+﻿@model AuthQueueAppV3.Models.FITQuote_tbl
+
+
+<h1>Input quote to remove from Auth Queue</h1>
+
+
+<form method="post">
+
+    <div>
+        <label asp-for="QuoteNo">Quote Number</label>
+        <input asp-for="QuoteNo" />
+        <span asp-validation-for="QuoteNo"></span>
+    </div>
+
+    @*<div>
+            <label asp-for="NoOfPax"></label>
+            <select asp-for="NoOfPax" asp-items="@Html.GetEnumSelectList<DestinationType>()"></select>
+            <span asp-validation-for="NoOfPax"></span>
+        </div>*@
+
+    <input type="submit" name="QuoteNo" value="Lookup" />
+</form>
